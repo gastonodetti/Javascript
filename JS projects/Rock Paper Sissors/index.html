@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./img/thumbnail.png">
+    <title>Rock Paper Sissors</title>
+</head>
+<body>
+    <div id="content">
+        <div>
+       <img src="./img/rock.png" alt="rock" id="rock" class="unSelected">
+       <img src="./img/paper.png" alt="paper" id="paper" class="unSelected">
+       <img src="./img/sissor.png" alt="sissor" id="sissor" class="unSelected">
+    </div>
+       <div id="resultImg">
+        <img src="./img/rock.png" alt="rock" id="rockOponent" class="hidden">
+        <img src="./img/paper.png" alt="paper" id="paperOponent" class="hidden">
+        <img src="./img/sissor.png" alt="sissor" id="sissorOponent" class="hidden">
+       </div>
+    </div>
+    <div class="buttons">
+        <button id="play" class="button"> Jugar </button>
+        <button id="restart" class="button"> Reiniciar </button>
+    </div>
+    <div id="result"></div>
+
+<script src="./index.js"></script>
+</body>
+</html>

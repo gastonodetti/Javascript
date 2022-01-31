@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+
+header {
+    height: 80px;
+}
+
+header img {
+    padding: 16px 24px;
+}
+
+
+/*main*/
+
+/*background left image*/
+#background {
+    width: 342px;
+}
+
+/*square where all recipes are listed*/
+main {
+    display: flex;
+    width: 1440px;
+}
+
+#content {
+    width: 1098px;
+    padding-left: 48px;
+
+}
+
+/*header of the main section, where recipes are listed*/
+.top {
+    height: 231px;
+}
+
+.top h1 {
+    padding: 32px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchers {
+    display: flex;
+    align-items: stretch;
+
+}
+
+/*search tool, text input*/
+#searchBox {
+    width: 490px;
+    height: 48px;
+    border-radius: 16px;
+    background-color: #F9F9F9;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#searchBox img {
+    margin-left: 11.84px;
+}
+
+#searchBox input {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    width: 378px;
+    height: 24px;
+    background-color: #F9F9F9;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+/*cooked before menu, where you can choose active, inactive or all recipes*/
+.dropbtn {
+
+    height: 48px;
+    width: fit-content;
+    padding: 12px 48px 12px 24px;
+    margin-left: 16px;
+
+    background-color: #EBF0F3;
+    color: #1E3646;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+    border: none;
+    border-radius: 16px;
+
+    cursor: pointer;
+
+}
+/*all button styles */
+
+button {
+    width: fit-content;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 6px;
+    background-color: #EBF0F3;
+    color: #1E3646;
+    border: none;
+}
+
+button:hover {
+    border: solid 1px;
+}
+
+/*recipes titles*/
+
+.titles {
+    height: 48px;
+    margin-top: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #79797A;
+    border-bottom: solid 1px #B1C4D1;
+
+}
+
+.titles span:nth-child(1) {
+    margin-left: 8px;
+
+}
+
+.titles span:nth-child(2) {
+    margin-left: 405px;
+
+}
+
+.titles span:nth-child(3) {
+    margin-left: 182px;
+
+}
+
+/* all recipes are styled with the "li" tag*/
+
+
+li {
+    padding-left: 8px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #19191A;
+    border-bottom: solid 1px #EBF0F3;
+    line-height: 40px;
+    display: flex;
+}
+
+
+.recipeSpan {
+    width: 584px;
+
+}
+
+.empty {
+    color: #E9DBCB;
+}
+
+
+
+/*the "Add recipe" button */
+
+#plusButton {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #0C969D;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 2;
+
+}
+
+#plusButton a {
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+/*add recipe sign*/
+
+
+.popUpHide {
+    background-color: white;
+    width: 82px;
+    height: 32px;
+    border-radius: 8px;
+    position: fixed;
+    right: 90px;
+    bottom: 35px;
+    color: white;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+
+}
+
+.showPopUp {
+    background-color: #404042;
+    width: 82px;
+    height: 32px;
+    border-radius: 8px;
+    position: fixed;
+    right: 90px;
+    bottom: 35px;
+    color: white;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+/*Slider Button - library used here*/
+
+/* The switch - the box around the slider */
+.switch {
+    margin-left: 170px;
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    top: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #8DC63F;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #8DC63F;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 16px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+

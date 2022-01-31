@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Recipes</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logoTinkin">
+    </header>
+
+    <main>
+        <!-- Non dynamic part of the website -->
+
+        <img id="background" src="./img/background.png" alt="background">
+
+        <div id="content">
+            <div class="top">
+                <h1>Kitchen Recipes</h1>
+                <div class="searchers">
+                    <div id="searchBox">
+                        <img src="./img/search.png" alt="searchIcon">
+                        <input class="searchbar" id="myInput" onkeyup="searchFunction()" type="text" title="Search" placeholder="Search">
+                    </div>
+                    <div class="dropbtn">
+                        <span>Cooked before:</span>
+
+                        <button id="all">All</button>
+                        <button id="active">Active</button>
+                        <button id="inactive">Inactive</button>
+
+                    </div>
+                </div>
+                <div class="titles">
+                    <span>Recipe name <button id="orderAZ">A-Z</button><button id="orderZA">Z-A</button></span>
+                    <span>Reviews</span>
+                    <span>Cooked before</span>
+                </div>
+
+            </div>
+            <ul id="myList"></ul>
+
+
+        </div>
+    </main>
+
+    <div>
+        <!-- Add recipe button -->
+        <span id="popUp" class="popUpHide">Add recipe</span>
+        <div id="plusButton"><a href="#"><img src="./img/add.png" alt="addRecipe"></a></div>
+    </div>
+
+
+</body>
+
+
+<script src="./index.js"></script>
+
+</html>

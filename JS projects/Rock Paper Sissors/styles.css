@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+
+}
+#resultImg {
+   
+    width: 25%;
+    color: white;
+}
+
+
+#content img {
+   border-radius: 50%;
+   
+}
+
+#content *:hover {
+    filter: grayscale(0%);
+}
+
+
+#result {
+    height: 80px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+   
+}
+
+.hidden {
+    display: none;
+    width: 0px;
+   height: 0px;
+}
+
+.shown {
+   width: 200px;
+   height: 200px;
+    display: block;
+}
+
+.button { 
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+   
+}
+.buttons {
+   
+    justify-content: center;
+    padding: 50px 0px;
+    display: flex;
+}
+.button:hover {
+    background-color: grey;
+}
+
+.selected {
+    filter: grayscale(0%);
+    width: 200px;
+    height: 200px;
+}
+.unSelected {
+    border: none;
+    width: 200px;
+    height: 200px;
+    filter: grayscale(100%);
+
+}
+

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+main div {
+    margin: 0px auto 0px auto;
+}
+
+h1 {
+    font-family: 'Dongle', sans-serif;
+    font-size: 40px;
+   
+
+}
+.addTask {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    height: 200px;
+    background-color: #e6e6e6;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.addTask div{
+   padding: 0px;
+}
+
+.addTask button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #8c8c8c;
+}
+
+input {
+    border: none;
+    height: 20px;
+    width: 300px;
+}
+
+
+.tasksToDo {
+    width: 50%;
+    height: min-content;
+    
+}
+
+.tasksToDo ul {
+    width: 100%;
+    position: relative;
+    left: -40px;
+}
+
+
+.liClass {
+    display: block;
+    transition: 0.6s;
+    padding-top: 8px;
+    padding-left: 10px;
+    border-bottom: solid 0.5px #e6e6e6;
+    
+}
+
+.liClass:hover {
+    background-color: #ccffcc;
+    color: white;
+    transition: 0.3s;
+ 
+}
+
+
+.checked {
+    color: #8c8c8c;
+    background-color:#99ff99;
+    transition: 0.6s;
+    text-decoration: line-through;
+    border: none;
+
+}
+
+.checkbox {
+    
+    position: relative;
+    top: -5px;
+    right: 3px;
+   
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-color: #e6e6e6;
+   
+    border-radius: 50%;
+}
+
+.checkbox:hover {
+    background-color: #8c8c8c;
+    transition: 0.4s;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
