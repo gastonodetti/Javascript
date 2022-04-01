@@ -77,6 +77,8 @@ input {
     text-decoration: line-through;
     border: none;
 
+    display: block;
+
 }
 
 .checkbox {
@@ -97,9 +99,5 @@ input {
     background-color: #8c8c8c;
     transition: 0.4s;
     color: white;
-}
-
-.hidden {
-    visibility: hidden;
 }
 
