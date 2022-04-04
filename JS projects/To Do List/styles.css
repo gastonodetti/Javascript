@@ -101,3 +101,11 @@ input {
     color: white;
 }
 
+#borrar {
+    position: relative;
+    left: 47%;
+    top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
