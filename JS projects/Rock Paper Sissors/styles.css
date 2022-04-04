@@ -75,3 +75,46 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    
+
+    body {
+        padding: 100px;
+    }
+    
+   
+    #content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    
+    }
+    #resultImg {
+        width: min-content;
+    }
+       
+    
+    #result {
+        font-size: 40px;
+        margin: 0px auto;
+       
+    }
+    
+    
+    .shown {
+       width: 100px;
+       height: 100px;
+    }
+    
+    
+    .selected {
+        width: 100px;
+        height: 100px;
+    }
+    .unSelected {
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+}
